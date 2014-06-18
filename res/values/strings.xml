@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UgMedicalBuddy</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="previous">previous</string>
+    <string name="ret_urn">return</string>
+    <string name="send_sms">Send SMS</string>
+    <string name="next">next</string>
+    <string-array name="Titles" size = "3">
+        <item>Bleeding</item>
+        <item>Burns</item>
+        <item>Sprains</item>
+         <item>Bites and Strings</item>
+        <item>Poison Plants and Rashes</item>
+        <item>Diarrhea</item>
+    </string-array>
+    <string-array name="Quotes">
+        <item>Pressure should be applied with a towel or gauze until it stops bleeding. 
+</item>
+        <item>Minor burns can be treated with cool running water or compress. 
+</item>
+        <item>Apply a cold compress or ice immediately to help swelling off and on
+</item>
+       <item>Ice or cold compress should be applied immediately.
+
+ 
+</item>
+        <item>Wash contact area immediately. 
+</item>
+        <item>Consume only liquid until the condition improves. 
+
+</item>
+    </string-array>
+
+</resources>

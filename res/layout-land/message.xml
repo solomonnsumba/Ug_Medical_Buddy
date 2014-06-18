@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bakgr2">
+    
+   <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number : "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#0d0c02"/>
+
+    <EditText
+            android:id="@+id/mn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="with country code like 256..."
+            android:phoneNumber="true"
+            android:textColor="#0d0c02">
+    </EditText>
+
+    <TextView
+        android:id="@+id/mb"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:lines="5"
+        android:textColor="#0d0c02"
+        android:textSize="19sp" />
+
+    
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:gravity="center" >
+
+        <Button
+                android:id="@+id/sendBtn"
+                android:layout_width="170dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:text="Send"
+                android:onClick="send"
+                android:textColor="#0d0c02"/>
+
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="220dp"
+                android:layout_height="fill_parent"
+                android:text="Back"
+                android:id="@+id/backtmenu"
+                android:onClick="back"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:textColor="#0d0c02"/>
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#ace7d3"
+                android:id="@+id/textView"
+                android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+    
+</LinearLayout>

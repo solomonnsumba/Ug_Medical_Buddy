@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bakgr2" >
+
+    <TextView
+        android:id="@+id/color_region"
+        android:layout_width="320dp"
+        android:layout_height="87dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:autoText="false"
+        android:textColor="#0d0c02"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="6dp">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="361dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="-78dp" >
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/next"
+            android:textColor="#256309" />
+
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/cancelButton"
+                android:text="@string/ret_urn"
+                android:layout_marginLeft="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                />
+
+        <Button
+            android:id="@+id/sendMessage"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/cancelButton"
+            android:text="@string/send_sms" />
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cancelButton"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="@string/previous"
+            android:textColor="#225606" />
+
+    </RelativeLayout>
+    
+
+</LinearLayout>

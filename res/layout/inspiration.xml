@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bakgr2" >
+
+    <TextView
+        android:id="@+id/color_region"
+        android:layout_height="160dp"
+        android:layout_width="250dp"
+        android:layout_marginTop="40dp"
+        android:textColor="#0d0c02"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:autoText="false"
+        android:layout_gravity="center"/>
+
+    <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="6dp">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/copyrightTextVIew"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#1a231f"
+                android:textStyle="normal"/>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="297dp"
+        android:layout_height="186dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-78dp" >
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_toLeftOf="@+id/next"
+            android:text="@string/previous"
+            android:textColor="#225606" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="left|center_vertical"
+            android:text="@string/next"
+            android:textColor="#256309" />
+
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:id="@+id/cancelButton"
+                android:text="@string/ret_urn"
+                android:layout_marginLeft="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                />
+
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:id="@+id/sendMessage"
+                android:text="@string/send_sms"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/cancelButton"
+                android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    
+
+</LinearLayout>
