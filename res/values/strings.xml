@@ -8,6 +8,13 @@
     <string name="ret_urn">return</string>
     <string name="send_sms">Send SMS</string>
     <string name="next">next</string>
+     <string name="duck">duck</string>
+      <string name="medical">medical</string>
+    <string name="your_name">Your name</string>
+    <string name="your_email_address">Your email address</string>
+    <string name="your_phone">Your phone number</string>
+    <string name="comments_and_feedback">Comments and feedback</string>
+    <string name="submit">Submit</string>
     <string-array name="Titles" size = "3">
         <item>Bleeding</item>
         <item>Burns</item>

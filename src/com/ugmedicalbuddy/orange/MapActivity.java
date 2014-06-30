@@ -1,5 +1,8 @@
 
+
 package com.ugmedicalbuddy.orange;
+
+import com.ugmedicalbuddy.orange.R;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -8,22 +11,19 @@ import android.view.Menu;
 import android.webkit.WebView;
 import android.content.Context;
 
-public class NasaActivity extends Activity {
+public class MapActivity extends Activity {
 
-    private Context context;
-
-
-	@Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.helplayout);
-		WebView myWebView = (WebView) findViewById(R.id.webView1);
-		myWebView.getSettings().setBuiltInZoomControls(true);
+        setContentView(R.layout.centermap);
+		WebView myWebView2 = (WebView) findViewById(R.id.webView2);
+		myWebView2.getSettings().setBuiltInZoomControls(true);
 		// Not needed today...
 		// myWebView.getSettings().setJavaScriptEnabled(true);
 
 		// Open asset/index.html
-		myWebView.loadUrl("file:///android_asset/nasa.html");
+		myWebView2.loadUrl("file:///android_asset/solomon.html");
 	
         
     }

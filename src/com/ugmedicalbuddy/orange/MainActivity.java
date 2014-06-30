@@ -16,13 +16,13 @@ import android.widget.ImageButton;
 public class MainActivity extends Activity {
 
 	final Context context = this;
-	private ImageButton button, helpicon, healthtips,firstaid;
+	private ImageButton medicalcenter, button, helpicon, healthtips,firstaid;
  	
 	public void onCreate(Bundle savedInstanceState) {
  
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
- 
+		medicalcenter =(ImageButton) findViewById(R.id.map);
 		button = (ImageButton) findViewById(R.id.call_button);
 		healthtips = (ImageButton) findViewById(R.id.help_tips);
         healthtips.setOnClickListener(new OnClickListener() {
@@ -35,6 +35,16 @@ public class MainActivity extends Activity {
 			}
 		});
 		
+        
+        	medicalcenter.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent medicalcenter = new Intent(context, MapActivity.class);
+		    	startActivity(medicalcenter);
+				
+			}
+		});
 		
 		helpicon =	(ImageButton) findViewById(R.id.help);
         helpicon.setOnClickListener(new OnClickListener() {
@@ -43,6 +53,7 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				Intent helptips = new Intent(context, NasaActivity.class);
 		    	startActivity(helptips);
+		    	
 				
 			}
 		});

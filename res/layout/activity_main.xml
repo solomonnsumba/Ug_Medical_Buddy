@@ -57,7 +57,7 @@
                     android:id="@+id/textView1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Map"
+                    android:text="Center"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:gravity="left" />
             
@@ -101,7 +101,7 @@
                     android:layout_height="fill_parent"
                     android:layout_gravity="center"
                     android:layout_weight="2.72"
-                    android:text="Call"
+                    android:text="Call Doctor"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:gravity="center" />
            </LinearLayout>
