@@ -12,19 +12,38 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 
 	final Context context = this;
-	private ImageButton medicalcenter, button, helpicon, healthtips,firstaid;
+	private ImageView medicalcenter, button, helpicon, healthtips,firstaid;
  	
 	public void onCreate(Bundle savedInstanceState) {
  
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		medicalcenter =(ImageButton) findViewById(R.id.map);
-		button = (ImageButton) findViewById(R.id.call_button);
-		healthtips = (ImageButton) findViewById(R.id.help_tips);
+		medicalcenter =(ImageView) findViewById(R.id.image1);
+		button = (ImageView ) findViewById(R.id.image3);
+		healthtips = (ImageView ) findViewById(R.id.image2);
+		
+		medicalcenter.setOnClickListener(new OnClickListener() {
+			 
+			@Override
+			public void onClick(View arg0) {
+				
+				String uri = "geo:0,0?q=Hospital";
+ 				startActivity(new Intent(android.content.Intent.ACTION_VIEW, Uri.parse(uri)));
+ 
+			}
+ 
+		});
+		
+		
+		
+		
+		
+		
         healthtips.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -36,17 +55,8 @@ public class MainActivity extends Activity {
 		});
 		
         
-        	medicalcenter.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				Intent medicalcenter = new Intent(context, MapActivity.class);
-		    	startActivity(medicalcenter);
-				
-			}
-		});
-		
-		helpicon =	(ImageButton) findViewById(R.id.help);
+        			
+		helpicon =	(ImageView) findViewById(R.id.image5);
         helpicon.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -58,13 +68,13 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-		firstaid = (ImageButton) findViewById(R.id.first_aid);
+		firstaid = (ImageView) findViewById(R.id.image4);
  
 		firstaid.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
-				Intent firsAidtips = new Intent(context, QuoteViewerActivity.class);
+				Intent firsAidtips = new Intent(context, QuoteListActivity.class);
 		    	startActivity(firsAidtips);
 				
 			}

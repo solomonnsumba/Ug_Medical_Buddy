@@ -8,20 +8,17 @@
     <string name="ret_urn">return</string>
     <string name="send_sms">Send SMS</string>
     <string name="next">next</string>
-     <string name="duck">duck</string>
-      <string name="medical">medical</string>
+    <string name="medical">medical</string>
     <string name="your_name">Your name</string>
-    <string name="your_email_address">Your email address</string>
     <string name="your_phone">Your phone number</string>
-    <string name="comments_and_feedback">Comments and feedback</string>
     <string name="submit">Submit</string>
-    <string-array name="Titles" size = "3">
-        <item>Bleeding</item>
-        <item>Burns</item>
-        <item>Sprains</item>
-         <item>Bites and Strings</item>
-        <item>Poison Plants and Rashes</item>
-        <item>Diarrhea</item>
+    <string-array name="Titles" size = "6">
+        <item>1.Bleeding</item>
+        <item>2.Burns</item>
+        <item>3.Sprains</item>
+         <item>4.Bites and Strings</item>
+        <item>5.Poison Plants and Rashes</item>
+        <item>6.Diarrhea</item>
     </string-array>
     <string-array name="Quotes">
         <item>Pressure should be applied with a towel or gauze until it stops bleeding. 
